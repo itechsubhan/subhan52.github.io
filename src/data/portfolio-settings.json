@@ -1,0 +1,40 @@
+{
+  "profile": {
+    "fullName": "Mohd Abdul Subhan",
+    "headline": "Software Engineer",
+    "heroGreetingName": "Subhan",
+    "heroTagline": "Modern developer/creative portfolio"
+  },
+  "contact": {
+    "ctaLabel": "Contact Me",
+    "recipientName": "Mohd Abdul Subhan",
+    "recipientEmail": "subhanm2@montclair.edu"
+  },
+  "resume": {
+    "enabled": true,
+    "buttonLabel": "Download Resume",
+    "url": ""
+  },
+  "sections": {
+    "showTestimonials": false
+  },
+  "projects": [
+    {
+      "name": "Car Rent",
+      "description": "Web-based platform that allows users to search, book, and manage car rentals from various providers.",
+      "tags": ["react", "mongodb", "tailwind"],
+      "imageKey": "carrent",
+      "sourceCodeUrl": "https://github.com/",
+      "liveDemoUrl": ""
+    },
+    {
+      "name": "Job IT",
+      "description": "Web application that enables users to search for job openings and view estimated salary ranges.",
+      "tags": ["react", "restapi", "scss"],
+      "imageKey": "jobit",
+      "sourceCodeUrl": "https://github.com/",
+      "liveDemoUrl": ""
+    }
+  ],
+  "testimonials": []
+}
