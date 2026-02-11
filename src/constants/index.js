@@ -120,14 +120,14 @@ const educations = [
   {
     title: "MS in Computer Science",
     company_name: "Montclair State University",
-    icon: meta,
+    icon: 'https://edvoy.com/institutions/montclair-state-university/',
     iconBg: "#383E56",
     date: "Expected May 2026",
     points: ["GPA: 3.7 / 4.0"],
   },
   {
     title: "Bachelor of Engineering in Information Technology",
-    company_name: "Osmania University",
+    company_name: "Osmania University (MJCET)",
     icon: shopify,
     iconBg: "#E6DEDD",
     date: "2018 - 2022",
