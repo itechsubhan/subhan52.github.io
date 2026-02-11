@@ -3,7 +3,7 @@ import Tilt from 'react-parallax-tilt';
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
+import { profile, services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -23,7 +23,7 @@ const ServiceCard = ({ index, title, icon }) => (
       >
         <img
           src={icon}
-          alt='web-development'
+          alt='service'
           className='w-16 h-16 object-contain'
         />
 
@@ -47,12 +47,18 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-       I am a Software developer, with expertise in Java, Javascript and python having two years of industry experience.
-      I am currently working towards a Master's degree in Computer Science. Previously, I worked as a Software Developer at DBS Bank, 
-      where I gained experience in developing and managing microservices for the Institutional Banking domain. 
-      I am passionate about solving complex problems through technology and continuously improving my skills in full-stack development, cloud technologies
-      Let's work together to bring your ideas to life!
+        I am a Software Engineer focused on building resilient payment systems, scalable APIs, and reliable full-stack solutions. I am currently pursuing an MS in Computer Science at Montclair State University, and previously worked at DBS Tech where I built high-traffic microservices, improved API latency, and supported production-grade banking workflows. I enjoy solving complex engineering problems with clean, maintainable code.
       </motion.p>
+
+      <motion.div
+        variants={fadeIn("", "", 0.2, 1)}
+        className='mt-6 text-secondary text-[16px]'
+      >
+        <p>Email: <a href={`mailto:${profile.email}`} className='text-white hover:underline'>{profile.email}</a></p>
+        <p>Location: {profile.location}</p>
+        <p>Website: <a href={profile.website} target='_blank' rel='noreferrer' className='text-white hover:underline'>{profile.website}</a></p>
+      </motion.div>
+
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

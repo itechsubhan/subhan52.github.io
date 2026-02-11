@@ -1,0 +1,83 @@
+{
+  "profile": {
+    "fullName": "Mohd Abdul Subhan",
+    "headline": "Software Engineer",
+    "heroGreetingName": "Subhan",
+    "heroTagline": "I build scalable backend systems, reliable APIs, and modern web experiences with clean, maintainable code.",
+    "location": "New York",
+    "phone": "+1 (929) 713-3842",
+    "email": "subhanm2@montclair.edu",
+    "linkedin": "https://www.linkedin.com/in/mohdabdulsubhan",
+    "website": "https://masubhan.tech/"
+  },
+  "contact": {
+    "ctaLabel": "Contact Me",
+    "recipientName": "Mohd Abdul Subhan",
+    "recipientEmail": "subhanm2@montclair.edu"
+  },
+  "resume": {
+    "enabled": true,
+    "buttonLabel": "Download Resume",
+    "url": "https://masubhan.tech/"
+  },
+  "sections": {
+    "showTestimonials": true
+  },
+  "projects": [
+    {
+      "name": "Docify (iOS Utility & Communication Hub)",
+      "description": "Built a SwiftUI utility hub using MVVM with Firebase Auth and Stream Chat SDK for secure real-time communication.",
+      "tags": [
+        "swift",
+        "swiftui",
+        "firebase",
+        "mvvm"
+      ],
+      "imageKey": "tripguide",
+      "sourceCodeUrl": "",
+      "liveDemoUrl": ""
+    },
+    {
+      "name": "Integrated Payments Engine",
+      "description": "Engineered microservices for enterprise banking, including Autopay and Stop Recall services with strong reliability and performance.",
+      "tags": [
+        "java",
+        "spring-boot",
+        "microservices",
+        "sql"
+      ],
+      "imageKey": "carrent",
+      "sourceCodeUrl": "",
+      "liveDemoUrl": ""
+    },
+    {
+      "name": "Speech-recognition QA System",
+      "description": "Full-stack NLP system to query video content via speech-to-text indexing and React-based timestamped result views.",
+      "tags": [
+        "python",
+        "nlp",
+        "react",
+        "speech-recognition"
+      ],
+      "imageKey": "jobit",
+      "sourceCodeUrl": "",
+      "liveDemoUrl": ""
+    }
+  ],
+  "testimonials": [
+    {
+      "testimonial": "Subhan consistently delivered production-ready features under strict deadlines and high reliability requirements.",
+      "name": "Manager",
+      "designation": "Engineering",
+      "company": "DBS Tech",
+      "image": "https://randomuser.me/api/portraits/men/32.jpg"
+    },
+    {
+      "testimonial": "Strong ownership mindset and excellent communication across backend, data, and product stakeholders.",
+      "name": "Team Lead",
+      "designation": "Payments Platform",
+      "company": "DBS Tech",
+      "image": "https://randomuser.me/api/portraits/women/44.jpg"
+    }
+  ]
+}

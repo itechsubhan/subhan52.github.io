@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas,Education } from "./components";
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, Education } from "./components";
+import portfolioSettings from "./config/portfolio";
 
 const App = () => {
   return (
@@ -13,10 +14,10 @@ const App = () => {
         <About />
         <Experience />
         <Education />
-        {/* <Tech /> */}
+        <Tech />
         {/* <Skills /> */}
         <Works />
-        {/* <Feedbacks /> */}
+        {portfolioSettings.sections.showTestimonials && <Feedbacks />}
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
