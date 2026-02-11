@@ -19,7 +19,10 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Subhan</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-           DDFF<br className='sm:block hidden' />
+           Here's a toy for You enjoy :) 
+           <li> rightclick to drag </li>
+           <li> left click and rotate </li>
+           <br className='sm:block hidden' />
           </p>
         </div>
       </div>
