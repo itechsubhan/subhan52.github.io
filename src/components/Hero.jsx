@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import {  RobotCanvas } from "./canvas";
+import { RobotCanvas } from "./canvas";
+import portfolioSettings from "../config/portfolio";
 
 const Hero = () => {
   return (
@@ -16,7 +17,7 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Subhan</span>
+            Hi, I'm <span className='text-[#915EFF]'>{portfolioSettings.profile.heroGreetingName}</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
            Here's a toy for You enjoy :) 
@@ -24,6 +25,24 @@ const Hero = () => {
            <li> left click and rotate </li>
            <br className='sm:block hidden' />
           </p>
+          <div className='mt-6 flex gap-4'>
+            <a
+              href='#contact'
+              className='bg-[#915EFF] py-3 px-6 rounded-xl outline-none text-white font-bold shadow-md shadow-primary'
+            >
+              {portfolioSettings.contact.ctaLabel}
+            </a>
+            {portfolioSettings.resume.enabled && portfolioSettings.resume.url && (
+              <a
+                href={portfolioSettings.resume.url}
+                target='_blank'
+                rel='noreferrer'
+                className='bg-tertiary py-3 px-6 rounded-xl outline-none text-white font-bold shadow-md shadow-primary'
+              >
+                {portfolioSettings.resume.buttonLabel}
+              </a>
+            )}
+          </div>
         </div>
       </div>
 
