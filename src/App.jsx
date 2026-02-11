@@ -14,7 +14,7 @@ const App = () => {
         <About />
         <Experience />
         <Education />
-        {/* <Tech /> */}
+        <Tech />
         {/* <Skills /> */}
         <Works />
         {portfolioSettings.sections.showTestimonials && <Feedbacks />}

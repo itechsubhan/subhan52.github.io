@@ -3,7 +3,12 @@
     "fullName": "Mohd Abdul Subhan",
     "headline": "Software Engineer",
     "heroGreetingName": "Subhan",
-    "heroTagline": "Modern developer/creative portfolio"
+    "heroTagline": "I build scalable backend systems, reliable APIs, and modern web experiences with clean, maintainable code.",
+    "location": "New York",
+    "phone": "+1 (929) 713-3842",
+    "email": "subhanm2@montclair.edu",
+    "linkedin": "https://www.linkedin.com/in/mohdabdulsubhan",
+    "website": "https://masubhan.tech/"
   },
   "contact": {
     "ctaLabel": "Contact Me",
@@ -13,28 +18,66 @@
   "resume": {
     "enabled": true,
     "buttonLabel": "Download Resume",
-    "url": ""
+    "url": "https://masubhan.tech/"
   },
   "sections": {
-    "showTestimonials": false
+    "showTestimonials": true
   },
   "projects": [
     {
-      "name": "Car Rent",
-      "description": "Web-based platform that allows users to search, book, and manage car rentals from various providers.",
-      "tags": ["react", "mongodb", "tailwind"],
-      "imageKey": "carrent",
-      "sourceCodeUrl": "https://github.com/",
+      "name": "Docify (iOS Utility & Communication Hub)",
+      "description": "Built a SwiftUI utility hub using MVVM with Firebase Auth and Stream Chat SDK for secure real-time communication.",
+      "tags": [
+        "swift",
+        "swiftui",
+        "firebase",
+        "mvvm"
+      ],
+      "imageKey": "tripguide",
+      "sourceCodeUrl": "",
       "liveDemoUrl": ""
     },
     {
-      "name": "Job IT",
-      "description": "Web application that enables users to search for job openings and view estimated salary ranges.",
-      "tags": ["react", "restapi", "scss"],
+      "name": "Integrated Payments Engine",
+      "description": "Engineered microservices for enterprise banking, including Autopay and Stop Recall services with strong reliability and performance.",
+      "tags": [
+        "java",
+        "spring-boot",
+        "microservices",
+        "sql"
+      ],
+      "imageKey": "carrent",
+      "sourceCodeUrl": "",
+      "liveDemoUrl": ""
+    },
+    {
+      "name": "Speech-recognition QA System",
+      "description": "Full-stack NLP system to query video content via speech-to-text indexing and React-based timestamped result views.",
+      "tags": [
+        "python",
+        "nlp",
+        "react",
+        "speech-recognition"
+      ],
       "imageKey": "jobit",
-      "sourceCodeUrl": "https://github.com/",
+      "sourceCodeUrl": "",
       "liveDemoUrl": ""
     }
   ],
-  "testimonials": []
+  "testimonials": [
+    {
+      "testimonial": "Subhan consistently delivered production-ready features under strict deadlines and high reliability requirements.",
+      "name": "Manager",
+      "designation": "Engineering",
+      "company": "DBS Tech",
+      "image": "https://randomuser.me/api/portraits/men/32.jpg"
+    },
+    {
+      "testimonial": "Strong ownership mindset and excellent communication across backend, data, and product stakeholders.",
+      "name": "Team Lead",
+      "designation": "Payments Platform",
+      "company": "DBS Tech",
+      "image": "https://randomuser.me/api/portraits/women/44.jpg"
+    }
+  ]
 }
