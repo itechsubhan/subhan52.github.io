@@ -1,7 +1,6 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -15,273 +14,129 @@ import {
   git,
   figma,
   docker,
+  threejs,
   meta,
+  shopify,
   starbucks,
   tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
 } from "../assets";
+import portfolioSettings, { configuredProjects, configuredTestimonials } from "../config/portfolio";
 
 export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
-  {
-    id:"education",
-    title:"Education"
-  }
+  { id: "about", title: "About" },
+  { id: "work", title: "Work" },
+  { id: "education", title: "Education" },
+  { id: "contact", title: "Contact" },
 ];
 
 const services = [
-  {
-    title: "Full Stack Web Developer",
-    icon: web,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "ios Apps Developer",
-    icon: mobile,
-  }
+  { title: "Software Engineering", icon: mobile },
+  { title: "Backend Engineering", icon: backend },
+  { title: "Cloud & DevOps Delivery", icon: web },
 ];
 
 const skillsData = [
-  'JavaScript',
-  'React',
-  'Node.js',
-  'CSS',
-  'HTML',
-  'Python',
-  'MongoDB',
-  'Express.js',
-  'TypeScript',
-  'Git'
+  "Swift",
+  "SwiftUI",
+  "UIKit",
+  "Java",
+  "Spring Boot",
+  "Node.js",
+  "PostgreSQL",
+  "Docker",
+  "Jenkins",
+  "React",
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  { name: "React JS", icon: reactjs },
+  { name: "JavaScript", icon: javascript },
+  { name: "TypeScript", icon: typescript },
+  { name: "Node JS", icon: nodejs },
+  { name: "MongoDB", icon: mongodb },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Redux Toolkit", icon: redux },
+  { name: "HTML 5", icon: html },
+  { name: "CSS 3", icon: css },
+  { name: "Git", icon: git },
+  { name: "Docker", icon: docker },
+  { name: "Three JS", icon: threejs },
+  { name: "Figma", icon: figma },
 ];
 
 const experiences = [
   {
-    "title": "Software Developer",
-    "company_name": "DBS TECH (The Development Bank of Singapore)",
-    "icon": "dbs_tech",
-    "iconBg": "#123456", 
-    "date": "09/2023 - 08/2024",
-    "points": [
-      "Developed and maintained microservices for Institutional Banking.",
-      "Collaborated with business analysts and stakeholders to define requirements and implement solutions.",
-      "Led the migration of legacy systems to modernized microservices, improving system reliability and efficiency."
-    ]
+    title: "Graduate Assistant",
+    company_name: "Montclair State University School of Computing",
+    icon: meta,
+    iconBg: "#383E56",
+    date: "Aug 2025 - Present",
+    points: [
+      "Deliver detailed code reviews on Java, Python, and SQL assignments with focus on OOP and design quality.",
+      "Evaluate code quality and logic for 150+ students weekly and provide actionable feedback.",
+      "Support students during office hours across in-person and remote setups to resolve technical blockers.",
+    ],
   },
   {
-    "title": "Senior Officer",
-    "company_name": "DBS TECH",
-    "icon": "dbs_tech",
-    "iconBg": "#123456",
-    "date": "06/2022 - 08/2023",
-    "points": [
-      "Led the development of the Stop Recall Service and Standing Instructions modules for the payments system.",
-      "Integrated various microservices and resolved critical operational issues to enhance system performance."
-    ]
-  },{
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Analyst, Mobile-Backend Systems",
+    company_name: "Development Bank of Singapore (DBS) Tech",
+    icon: starbucks,
+    iconBg: "#1d1836",
+    date: "Jan 2023 - Aug 2024",
+    points: [
+      "Promoted from Senior Officer for strong performance in payment systems engineering.",
+      "Designed Java microservices for high-traffic mobile banking features handling 10k+ daily requests.",
+      "Reduced mobile API latency by 35% via SQL indexing and payload optimization.",
+      "Built Grafana monitoring to support 99.99% uptime for critical payment endpoints.",
+    ],
+  },
+  {
+    title: "Senior Officer, Full-Stack",
+    company_name: "Development Bank of Singapore (DBS) Tech",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jun 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Improved deployment speed by 25% by integrating Jenkins and Docker-based CI/CD pipelines.",
+      "Contributed to migration from monolithic banking modules to microservices architecture.",
+      "Executed large-scale SQL scripts for SG-region data cleanup during RHEL upgrades.",
+    ],
+  },
+  {
+    title: "Data Analyst Intern",
+    company_name: "KPMG",
+    icon: shopify,
+    iconBg: "#383E56",
+    date: "Nov 2021 - Dec 2021",
+    points: [
+      "Automated manual Excel-heavy reporting flows with SQL-based data retrieval pipelines.",
+      "Performed EDA using Python (NumPy, Pandas) to clean and analyze complex datasets.",
+      "Applied statistical analysis to extract patterns for business reporting and decision support.",
     ],
   },
 ];
-//  Education 
 
 const educations = [
-    {
-      "title": "MS in Computer Science",
-      "company_name": "Montclair State University",
-      "icon": "montclair_state_university",
-      "iconBg": "#E6DEDD",
-      "date": "08/2024 - Present",
-      "points": [
-        "Coursework: Advanced Algorithms, Machine Learning, Cloud Computing, Database Systems, Data Structures, etc."
-      ]
-    },
-    {
-      "title": "Bachelor of Engineering in Information Technology",
-      "company_name": "Muffakham Jah College of Engineering and Technology, OU",
-      "icon": "mjcet",
-      "iconBg": "#E6DEDD",
-      "date": "2018 - 2022",
-      "points": [
-        "CGPA: 8.07/10"
-      ]
-    }
-  ];
-
-
-
-const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    title: "MS in Computer Science",
+    company_name: "Montclair State University",
+    icon: 'https://edvoy.com/institutions/montclair-state-university/',
+    iconBg: "#383E56",
+    date: "Expected May 2026",
+    points: ["GPA: 3.7 / 4.0"],
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    title: "Bachelor of Engineering in Information Technology",
+    company_name: "Osmania University (MJCET)",
+    icon: shopify,
+    iconBg: "#E6DEDD",
+    date: "2018 - 2022",
+    points: ["GPA: 3.8 / 4.0"],
   },
 ];
 
-const projects = [
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
-];
+const testimonials = configuredTestimonials;
+const projects = configuredProjects;
 
-export { services, technologies, experiences, testimonials, projects,skillsData,educations };
+export const profile = portfolioSettings.profile;
+export { services, technologies, experiences, testimonials, projects, skillsData, educations };
